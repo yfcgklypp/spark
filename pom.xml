@@ -177,7 +177,7 @@
                 <spring.datasource.username>root</spring.datasource.username>
                 <spring.datasource.password>root</spring.datasource.password>
                 <service.port>8099</service.port>
-                <redis.datasource.host>39.96.63.238</redis.datasource.host>
+                <redis.datasource.host>xxxxxxxxxxxxxx</redis.datasource.host>
                 <redis.datasource.password>atv!@#$%QWERT</redis.datasource.password>
                 <redis.datasource.port>6379</redis.datasource.port>
                 <activeProfile>dev</activeProfile>
