@@ -1,0 +1,34 @@
+#Redisson配置
+singleServerConfig:
+  address: redis://@redis.datasource.host@:@redis.datasource.port@
+  password: @redis.datasource.password@
+  clientName: null
+  database: 1 #选择使用哪个数据库0~15
+  idleConnectionTimeout: 10000
+  pingTimeout: 1000
+  connectTimeout: 10000
+  timeout: 3000
+  retryAttempts: 3
+  retryInterval: 1500
+  reconnectionTimeout: 3000
+  failedAttempts: 3
+  subscriptionsPerConnection: 5
+  subscriptionConnectionMinimumIdleSize: 1
+  subscriptionConnectionPoolSize: 50
+  connectionMinimumIdleSize: 32
+  connectionPoolSize: 64
+  dnsMonitoringInterval: 5000
+  #dnsMonitoring: false
+  # 主节点信息
+  #nodeAddresses:
+    #- "redis://192.168.56.128:7000"
+    #- "redis://192.168.56.128:7001"
+    #- "redis://192.168.56.128:7002"
+  #集群扫描间隔时间 单位毫秒
+  #scanInterval: 1000
+
+threads: 0
+nettyThreads: 0
+codec:
+  class: "org.redisson.codec.JsonJacksonCodec"
+transportMode: "NIO"
